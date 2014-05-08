@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FindYourWords.iml" filepath="$PROJECT_DIR$/FindYourWords.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aFileChooser/aFileChooser.iml" filepath="$PROJECT_DIR$/aFileChooser/aFileChooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/find_your_words/find_your_words.iml" filepath="$PROJECT_DIR$/find_your_words/find_your_words.iml" />
+    </modules>
+  </component>
+</project>
+

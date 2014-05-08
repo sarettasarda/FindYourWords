@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_wood"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="500dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/board_black"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/insertWords"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@null"
+                android:hint="@string/hint_edit_text"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/text_black_board"
+                android:layout_margin="5dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/buttonInsert"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_add"
+                    android:layout_marginLeft="10dp" />
+
+                <Button
+                    android:id="@+id/buttonReset"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_remove" />
+
+                <Button
+                    android:id="@+id/btnReadSDFile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_load" />
+
+                <Button
+                    android:id="@+id/buttonWriteSDFile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_save" />
+
+                <Button
+                    android:id="@+id/buttonInfo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_info"
+                    android:layout_marginRight="20dp" />
+
+                <Button
+                    android:id="@+id/buttonCredits"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_credits" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/page_note"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="95dp"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/scrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:id="@+id/linearLayout">
+
+            <Button
+                android:id="@+id/deselectAll"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/selectAll"
+                android:layout_alignBottom="@+id/selectAll"
+                android:layout_toRightOf="@+id/selectAll"
+                android:background="@drawable/button_deselect_all" />
+
+            <Button
+                android:id="@+id/selectAll"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/button_select_all"
+                android:layout_marginRight="20dp" />
+
+            <Button
+                android:id="@+id/button_play"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/deselectAll"
+                android:layout_alignBottom="@+id/deselectAll"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_play" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

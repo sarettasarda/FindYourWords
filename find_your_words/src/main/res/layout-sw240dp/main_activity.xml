@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_wood"
+    android:orientation="horizontal"
+    tools:context=".MainActivityActivity"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="308dp"
+        android:layout_height="271dp"
+        android:background="@drawable/block_notes"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+        
+        <LinearLayout
+            android:layout_width="266dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="62dp"
+            android:background="@null" >
+
+            <grid.RelativeLayoutView
+                android:id="@+id/relative_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@null" >
+
+                <Button
+                    android:id="@+id/button_start"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/play2_button" />
+
+            </grid.RelativeLayoutView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/buttonInfo"
+                android:layout_alignLeft="@+id/button_reload"
+                android:textSize="20dp"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/buttonInfo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/linearLayout1"
+                android:layout_alignRight="@+id/linearLayout1"
+                android:background="@drawable/button_info"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/post_it"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="88dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/wordList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/button_reload"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/linearLayout1"
+                android:background="@drawable/button_reload"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/led"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/button_reload"
+                android:layout_toRightOf="@+id/button_reload"
+                android:src="@drawable/led_on" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

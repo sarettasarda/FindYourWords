@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Find Your Words</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="insert_file_name">Insert file name</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint_edit_text">Write here your words or press the Insert button to load them from a text file.</string>
+	<string name="info_button_add">Button ADD: load the words from the the editor text box, parses the inserted text and adds the words to the wordlist. \n(Note: only the words with 3 or more characters are accepted and every character that is not a letter is considered as a space)</string>
+    <string name="info_button_delete">Button DELETE: cleans up the editor text box.</string>
+    <string name="info_button_open">Button OPEN: opens a dialog box for choosing the file from where loading the words. \n(Note: only txt file are eligible)</string>
+    <string name="info_button_save">Button SAVE: opens a dialog for saving the text in editor text box into a file stored on the SD card.</string>
+    <string name="info_button_deselect">Button DESELECT ALL: deselects all the check boxes of the word list.</string>
+    <string name="info_button_select">Button SELECT ALL: selects all the check boxes of the word list.</string>
+    <string name="info_button_play">Button PLAY: starts the game.</string>
+    <string name="info_button_reload">Button RELOAD: resets the grid and changes the positions of the words.</string>
+	<string name="info_led">The led is green if  all the words that you have chose are inside the grid, is red otherwise. \nIf the led is green all the words that you have chose have been fitted into the grid, if it is red  maybe you chose too many words and there is not enough space on the grid. Try to reload the grid by clicking the RELOAD button or returns back to the first screen to deselect some words. \n(Note that words with more than 14 character cannot be displayed)</string>
+	<string name="credits">This game was created by Sara Craba. </string>	
+	<string name="external_libreries">External library used: aFileChooser - Copyright  © 2011-2013 Paul Burke. </string>	
+	<string name="copyright"> <![CDATA[
+<p>-----</p>
+<p>Copyright 2013 Sara Craba</p>
+<p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+<a href="href="http://www.apache.org/licenses/LICENSE-2.0">"http://www.apache.org/licenses/LICENSE-2.0</a>
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
+]]>
+ 	</string>	
+ </resources>

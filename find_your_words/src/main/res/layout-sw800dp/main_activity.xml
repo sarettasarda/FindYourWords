@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_wood"
+    android:orientation="horizontal"
+    tools:context=".MainActivityActivity"
+    android:gravity="center_vertical|center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="828dp"
+        android:layout_height="714dp"
+        android:background="@drawable/block_notes" >
+
+        <LinearLayout
+            android:layout_width="700dp"
+            android:layout_height="500dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="168dp"
+            android:background="@null" >
+
+            <grid.RelativeLayoutView
+                android:id="@+id/relative_layout"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" 
+                android:background="@null" >
+
+                <Button
+                    android:id="@+id/button_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/play2_button" />
+
+            </grid.RelativeLayoutView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/buttonInfo"
+                android:layout_toLeftOf="@+id/led"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/buttonInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout1"
+                android:layout_alignRight="@+id/linearLayout1"
+                android:background="@drawable/button_info"
+                android:layout_marginLeft="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/post_it"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp" >
+
+                <LinearLayout
+                    android:id="@+id/wordList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/led"
+                android:layout_toLeftOf="@+id/buttonInfo"
+                android:background="@drawable/button_reload" />
+
+            <ImageView
+                android:id="@+id/led"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/button_reload"
+                android:src="@drawable/led_on"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

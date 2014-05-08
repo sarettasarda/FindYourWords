@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="text_black_board">20dp</dimen>
+    <dimen name="list_word_check_box">20dp</dimen>
+    <dimen name="list_words_main_activity">20dp</dimen>
+</resources>
