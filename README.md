@@ -16,7 +16,7 @@ Developed by Sara Craba (sarettasarda)
 
 External Android Library: aFileChooser by Paul Burke (iPaulPro)
 
-Licenses
+License
 =============
 
     Copyright (C) 2014 Sara Craba
