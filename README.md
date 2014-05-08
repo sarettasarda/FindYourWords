@@ -5,6 +5,8 @@ Find Your Words
 
 
 Credits
+=============
+
 Developed by Sara Craba (sarettasarda)
 
 External Android Library: aFileChooser by Paul Burke (iPaulPro)
