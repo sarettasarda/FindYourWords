@@ -4,7 +4,7 @@ Find Your Words
 
 Uses
 =============
-One of the usages of Find Your Words is as a sample to manage touch on Android, in particular on grid.LineDrawView class onTouchEvent(), actionDown(), actionMove() and actionUp() classes keep track of the finger movement drawing a line.
+One of the usages of Find Your Words is as a sample to learn how managing touch gestures on Android, In particular using grid.LineDrawView class onTouchEvent(), actionDown(), actionMove() and actionUp() methods it is possible to keep track of the finger movement and drawing a line.
 
 
 Playstore link
