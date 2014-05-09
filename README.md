@@ -1,17 +1,19 @@
 Find Your Words
 =============
-
 "Find Your Words" is a playstore available android Application, here the entire code.
+
+Uses
+=============
+One of the usages of Find Your Words is as a sample to manage touch on Android, in particular on grid.LineDrawView class onTouchEvent(), actionDown(), actionMove() and actionUp() classes keep track of the finger movement drawing a line.
+
 
 Playstore link
 =============
-
 https://play.google.com/store/apps/details?id=com.sara.find_your_words
 
 
 Credits
 =============
-
 Developed by Sara Craba (sarettasarda)
 
 External Android Library: aFileChooser by Paul Burke (iPaulPro)
